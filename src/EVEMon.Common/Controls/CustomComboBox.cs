@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace EVEMon.Common.Controls
 {
@@ -169,6 +170,7 @@ namespace EVEMon.Common.Controls
 
         private ToolTip toolTip;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public ToolTip ToolTip
         {
             get { return this.toolTip; }

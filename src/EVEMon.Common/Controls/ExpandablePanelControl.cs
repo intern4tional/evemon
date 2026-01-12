@@ -236,6 +236,7 @@ namespace EVEMon.Common.Controls
         /// Gets or sets the expanded Height of the Panel.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int ExpandedHeight
         {
             get { return m_expandedHeight; }
@@ -256,12 +257,14 @@ namespace EVEMon.Common.Controls
         /// Gets or sets the Header text.
         /// </summary>
         [Description("The text to be shown in the header.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string HeaderText { get; set; }
 
         /// <summary>
         /// Gets or sets the image shown in the header when Panel is collapsed. Height must be less than HeaderHeight - 4 pixels. Null to disable it.
         /// </summary>
         [Description("The image used in the header when the Panel is collapsed.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Bitmap ImageExpand
         {
             get { return m_expandImage; }
@@ -279,6 +282,7 @@ namespace EVEMon.Common.Controls
         /// Gets or sets the image shown in the header when Panel is expanded. Height must be less than HeaderHeight - 4 pixels. Null to disable it.
         /// </summary>
         [Description("The image used in the header when the Panel is expanded.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Bitmap ImageCollapse
         {
             get { return m_collapseImage; }
@@ -296,12 +300,14 @@ namespace EVEMon.Common.Controls
         /// Gets or sets the Expand/Collapse Speed.
         /// </summary>
         [Description("Set the Expand/Collapse Speed.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public AnimationSpeed AnimationSpeed { get; set; }
 
         /// <summary>
         /// Gets or sets the Header's height of the Panel. Height must be between 30 and 50.
         /// </summary>
         [Description("Set the Header's height of the Panel. Height must be between 30 and 50.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int HeaderHeight
         {
             get { return Header.Height; }
@@ -318,18 +324,21 @@ namespace EVEMon.Common.Controls
         /// Gets or sets the direction of the Panel expansion.
         /// </summary>
         [Description("Set the direction of the Panel expansion.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Direction ExpandDirection { get; set; }
 
         /// <summary>
         /// Gets or sets  whether the Panel should start expanded.
         /// </summary>
         [Description("Indicates whether the Panel should start expanded.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool ExpandedOnStartup { get; set; }
 
         /// <summary>
         /// Gets or sets whether the contextMenu should be shown by right-clicking on the header.
         /// </summary>
         [Description("Indicates whether the contextMenu should be shown by right-clicking on the header.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool EnableContextMenu { get; set; }
 
         #endregion

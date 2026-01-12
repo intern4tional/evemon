@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using EVEMon.Common.Extensions;
 using EVEMon.Common.Models;
+using System.ComponentModel;
 
 namespace EVEMon.Common.Controls
 {
@@ -32,6 +33,15 @@ namespace EVEMon.Common.Controls
         /// Gets or sets a value indicating whether [allow row reorder].
         /// </summary>
         /// <value><c>true</c> if [allow row reorder]; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+
+        #region Draggable stuff
+
+        /// <summary>
+        /// Gets or sets a value indicating whether [allow row reorder].
+        /// </summary>
+        /// <value><c>true</c> if [allow row reorder]; otherwise, <c>false</c>.</value>
         public bool AllowRowReorder
         {
             get { return m_allowRowReorder; }
@@ -42,6 +52,14 @@ namespace EVEMon.Common.Controls
             }
         }
 
+        /// <summary>
+        /// Gets or sets the sort order for items in the control.
+        /// </summary>
+        /// <value></value>
+        /// <returns>One of the <see cref="T:System.Windows.Forms.SortOrder"/> values.
+        /// The default is <see cref="F:System.Windows.Forms.SortOrder.None"/>.</returns>
+        /// <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value specified is not one of the <see cref="T:System.Windows.Forms.SortOrder"/> values. </exception>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the sort order for items in the control.
         /// </summary>
@@ -300,3 +318,4 @@ namespace EVEMon.Common.Controls
         #endregion
     }
 }
+#endregion

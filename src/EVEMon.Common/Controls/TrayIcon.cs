@@ -68,6 +68,7 @@ namespace EVEMon.Common.Controls
         /// </remarks>
         [Category("Appearance"),
          Description("The text that will be displayed when the mouse hovers over the icon")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string Text
         {
             get { return notifyIcon.Text; }
@@ -95,6 +96,7 @@ namespace EVEMon.Common.Controls
         /// Exposes the value of the underlying <see cref="System.Windows.Forms.NotifyIcon.ContextMenuStrip"/> property.
         /// </remarks>
         [Category("Behaviour")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public ContextMenuStrip ContextMenuStrip
         {
             get { return notifyIcon.ContextMenuStrip; }

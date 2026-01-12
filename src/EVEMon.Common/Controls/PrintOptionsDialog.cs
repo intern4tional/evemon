@@ -2,6 +2,7 @@ using System;
 using System.Drawing.Printing;
 using EVEMon.Common.Extensions;
 using EVEMon.Common.SettingsObjects;
+using System.ComponentModel;
 
 namespace EVEMon.Common.Controls
 {
@@ -60,12 +61,22 @@ namespace EVEMon.Common.Controls
         /// Gets or sets a value indicating whether [entry finish date].
         /// </summary>
         /// <value><c>true</c> if [entry finish date]; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets a value indicating whether [entry finish date].
+        /// </summary>
+        /// <value><c>true</c> if [entry finish date]; otherwise, <c>false</c>.</value>
         public bool EntryFinishDate
         {
             get { return checkFinishDate.Checked; }
             set { checkFinishDate.Checked = value; }
         }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether [entry number].
+        /// </summary>
+        /// <value><c>true</c> if [entry number]; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets a value indicating whether [entry number].
         /// </summary>
@@ -80,12 +91,22 @@ namespace EVEMon.Common.Controls
         /// Gets or sets a value indicating whether [entry start date].
         /// </summary>
         /// <value><c>true</c> if [entry start date]; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets a value indicating whether [entry start date].
+        /// </summary>
+        /// <value><c>true</c> if [entry start date]; otherwise, <c>false</c>.</value>
         public bool EntryStartDate
         {
             get { return checkStartDate.Checked; }
             set { checkStartDate.Checked = value; }
         }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether [entry training times].
+        /// </summary>
+        /// <value><c>true</c> if [entry training times]; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets a value indicating whether [entry training times].
         /// </summary>
@@ -100,12 +121,22 @@ namespace EVEMon.Common.Controls
         /// Gets or sets a value indicating whether [entry notes].
         /// </summary>
         /// <value><c>true</c> if [entry notes]; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets a value indicating whether [entry notes].
+        /// </summary>
+        /// <value><c>true</c> if [entry notes]; otherwise, <c>false</c>.</value>
         public bool EntryNotes
         {
             get { return checkNotes.Checked; }
             set { checkNotes.Checked = value; }
         }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether [footer count].
+        /// </summary>
+        /// <value><c>true</c> if [footer count]; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets a value indicating whether [footer count].
         /// </summary>
@@ -120,6 +151,11 @@ namespace EVEMon.Common.Controls
         /// Gets or sets a value indicating whether [footer date].
         /// </summary>
         /// <value><c>true</c> if [footer date]; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets a value indicating whether [footer date].
+        /// </summary>
+        /// <value><c>true</c> if [footer date]; otherwise, <c>false</c>.</value>
         public bool FooterDate
         {
             get { return checkDateInformation.Checked; }
@@ -130,12 +166,22 @@ namespace EVEMon.Common.Controls
         /// Gets or sets a value indicating whether [footer total time].
         /// </summary>
         /// <value><c>true</c> if [footer total time]; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets a value indicating whether [footer total time].
+        /// </summary>
+        /// <value><c>true</c> if [footer total time]; otherwise, <c>false</c>.</value>
         public bool FooterTotalTime
         {
             get { return checkTotalTimes.Checked; }
             set { checkTotalTimes.Checked = value; }
         }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether [include header].
+        /// </summary>
+        /// <value><c>true</c> if [include header]; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets a value indicating whether [include header].
         /// </summary>

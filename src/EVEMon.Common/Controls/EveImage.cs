@@ -67,12 +67,23 @@ namespace EVEMon.Common.Controls
         /// <summary>
         /// Gets or sets the state of the pop-up ability.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Public Properties
+
+        /// <summary>
+        /// Gets or sets the state of the pop-up ability.
+        /// </summary>
         public bool PopUpEnabled { get; set; }
 
         /// <summary>
         /// Gets or sets the item to display an image for.
         /// </summary>
         [Browsable(false), ReadOnly(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Item EveItem
         {
             get { return m_item; }
@@ -84,6 +95,10 @@ namespace EVEMon.Common.Controls
             }
         }
 
+        /// <summary>
+        /// Gets or sets the size of the image in eve parlance.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the size of the image in eve parlance.
         /// </summary>
@@ -105,6 +120,10 @@ namespace EVEMon.Common.Controls
         /// <summary>
         /// Gets or sets the size of the image in pixels.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets the size of the image in pixels.
+        /// </summary>
         public new Size Size
         {
             get { return base.Size; }
@@ -116,6 +135,11 @@ namespace EVEMon.Common.Controls
             }
         }
 
+        /// <summary>
+        /// Gets or sets the size mode.
+        /// </summary>
+        /// <value>The size mode.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the size mode.
         /// </summary>

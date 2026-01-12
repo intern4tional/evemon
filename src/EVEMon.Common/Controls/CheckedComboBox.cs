@@ -82,14 +82,20 @@ namespace EVEMon.Common.Controls
         /// <summary>
         /// The valueSeparator character(s) between the ticked elements as they appear in the text portion of the CheckedComboBox.
         /// </summary> 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// The valueSeparator character(s) between the ticked elements as they appear in the text portion of the CheckedComboBox.
+        /// </summary> 
         public string ValueSeparator { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool CheckOnClick
         {
             get { return listBox.CheckOnClick; }
             set { listBox.CheckOnClick = value; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public new string DisplayMember
         {
             get { return listBox.DisplayMember; }
@@ -98,6 +104,7 @@ namespace EVEMon.Common.Controls
 
         public delegate string CheckedComboBoxTextBuilderDelegate(CheckedComboBox box);
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public CheckedComboBoxTextBuilderDelegate CustomTextBuilder { get; set; }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]

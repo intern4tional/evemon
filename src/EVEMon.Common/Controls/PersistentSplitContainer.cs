@@ -14,6 +14,7 @@ namespace EVEMon.Common.Controls
         /// Do not set up directly in the designer, call it from the control's constructor, after InitializeComponent().
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string RememberDistanceKey
         {
             get { return m_rememberDistanceKey; }

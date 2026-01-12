@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
     <OutputType>WinExe</OutputType>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -291,5 +291,6 @@
     <PostBuildEvent>del "$(MSBuildProjectDirectory)"\EVEMon.res
 if exist "$(TargetDir)"EVEMon.exe.config del "$(TargetDir)"EVEMon.exe.config
 if exist "$(TargetDir)"stdole.dll del "$(TargetDir)"stdole.dll</PostBuildEvent>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 </Project>

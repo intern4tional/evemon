@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace EVEMon.Common.Controls
 {
@@ -338,6 +339,10 @@ namespace EVEMon.Common.Controls
                 Width = 6;
             }
 
+            /// <summary>
+            /// gets or sets the gradent shoudl be reversed.
+            /// </summary>
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
             /// <summary>
             /// gets or sets the gradent shoudl be reversed.
             /// </summary>

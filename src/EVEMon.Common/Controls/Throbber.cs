@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using EVEMon.Common.Enumerations;
+using System.ComponentModel;
 
 namespace EVEMon.Common.Controls
 {
@@ -53,6 +54,10 @@ namespace EVEMon.Common.Controls
             base.Dispose(disposing);
         }
 
+        /// <summary>
+        /// Gets or sets the throbber's state.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the throbber's state.
         /// </summary>

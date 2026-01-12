@@ -151,6 +151,7 @@ namespace EVEMon.Common.Controls
         /// Gets or sets the selected item.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public new object SelectedItem
         {
             get { return m_listBox.SelectedItem; }
@@ -161,6 +162,7 @@ namespace EVEMon.Common.Controls
         /// Gets or sets the selected index.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public new int SelectedIndex
         {
             get { return m_listBox.SelectedIndex; }

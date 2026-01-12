@@ -113,6 +113,7 @@ namespace EVEMon.Common.Controls
         /// </summary>
         [Category("Data")]
         [Description("Skill queue to render on the control canvas")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public SkillQueue SkillQueue
         {
             get { return m_skillQueue; }
@@ -128,6 +129,7 @@ namespace EVEMon.Common.Controls
         /// </summary>
         [Category("Appearance")]
         [Description("Less than day first color of the component")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Color LessThanDayFirstColor
         {
             get { return m_lessThanDayFirstColor; }
@@ -144,6 +146,7 @@ namespace EVEMon.Common.Controls
         /// </summary>
         [Category("Appearance")]
         [Description("Less than day second color of the component")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Color LessThanDaySecondColor
         {
             get { return m_lessThanDaySecondColor; }
@@ -159,6 +162,7 @@ namespace EVEMon.Common.Controls
         /// </summary>
         [Category("Appearance")]
         [Description("Less than day first color of the component")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Color MoreThanDayFirstColor
         {
             get { return m_moreThanDayFirstColor; }
@@ -175,6 +179,7 @@ namespace EVEMon.Common.Controls
         /// </summary>
         [Category("Appearance")]
         [Description("More than day second color of the component")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Color MoreThanDaySecondColor
         {
             get { return m_moreThanDaySecondColor; }
@@ -190,6 +195,7 @@ namespace EVEMon.Common.Controls
         /// </summary>
         [Category("Appearance")]
         [Description("Color used for the free space at the end of the queue when there are less than 24h of training queued.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Color EmptyColor
         {
             get { return m_emptyColor; }
@@ -205,6 +211,7 @@ namespace EVEMon.Common.Controls
         /// </summary>
         [Category("Appearance")]
         [Description("Color used for the border of the queue.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Color BorderColor
         {
             get { return m_borderColor; }

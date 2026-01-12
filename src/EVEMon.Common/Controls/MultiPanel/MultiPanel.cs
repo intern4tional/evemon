@@ -28,6 +28,7 @@ namespace EVEMon.Common.Controls.MultiPanel
         [Category("Appearance")]
         [Description("The selected page.")]
         [Editor(typeof(MultiPanelSelectionEditor), typeof(UITypeEditor))]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public MultiPanelPage SelectedPage
         {
             get { return m_selectedPage; }

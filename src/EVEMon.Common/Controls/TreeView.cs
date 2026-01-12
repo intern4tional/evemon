@@ -250,6 +250,16 @@ namespace EVEMon.Common.Controls
         /// <summary>
         /// This property is for internal use only. Use SelectedNodes instead.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region SelectedNode, SelectionMode, SelectionBackColor, SelectedNodes + events
+
+        /// <summary>
+        /// This property is for internal use only. Use SelectedNodes instead.
+        /// </summary>
         public new TreeNode SelectedNode
         {
             get
@@ -268,6 +278,7 @@ namespace EVEMon.Common.Controls
         /// <summary>
         /// Gets/sets selection mode.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public TreeViewSelectionMode SelectionMode
         {
             get { return m_selectionMode; }
@@ -277,6 +288,7 @@ namespace EVEMon.Common.Controls
         /// <summary>
         /// Gets/sets backcolor for selected nodes.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Color SelectionBackColor
         {
             get { return m_selectionBackColor; }

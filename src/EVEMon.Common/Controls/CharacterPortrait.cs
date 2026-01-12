@@ -59,6 +59,7 @@ namespace EVEMon.Common.Controls
         /// Gets or sets the character.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Character Character
         {
             get { return m_character; }
