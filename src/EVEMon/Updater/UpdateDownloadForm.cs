@@ -40,6 +40,7 @@ namespace EVEMon.Updater
         /// Handles the Shown event of the UpdateDownloadForm control.
         /// </summary>
         /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
+        [Obsolete]
         protected override void OnShown(EventArgs e)
         {
             base.OnShown(e);

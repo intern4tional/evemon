@@ -81,6 +81,17 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// Gets or sets the current plan.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Public Properties
+
+
+        /// <summary>
+        /// Gets or sets the current plan.
+        /// </summary>
         internal Plan Plan
         {
             get { return m_plan; }
@@ -95,6 +106,10 @@ namespace EVEMon.SkillPlanner
             }
         }
 
+        /// <summary>
+        /// Gets or sets the certificate class (i.e. "Core competency").
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the certificate class (i.e. "Core competency").
         /// </summary>

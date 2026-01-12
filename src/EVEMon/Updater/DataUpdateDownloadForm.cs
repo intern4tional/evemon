@@ -47,6 +47,7 @@ namespace EVEMon.Updater
         /// <summary>
         /// Initilizes the controls.
         /// </summary>
+        [Obsolete]
         private void InitilizeControls()
         {
             SuspendLayout();
@@ -156,6 +157,7 @@ namespace EVEMon.Updater
             /// Initializes a new instance of the <see cref="DataUpdateDownloadControl"/> class.
             /// </summary>
             /// <param name="datafile">The datafile.</param>
+            [Obsolete]
             internal DataUpdateDownloadControl(SerializableDatafile datafile)
             {
                 InitializeComponent();

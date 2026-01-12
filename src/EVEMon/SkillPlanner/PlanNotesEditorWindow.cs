@@ -1,6 +1,7 @@
 using System;
 using System.Windows.Forms;
 using EVEMon.Common.Controls;
+using System.ComponentModel;
 
 namespace EVEMon.SkillPlanner
 {
@@ -17,6 +18,11 @@ namespace EVEMon.SkillPlanner
             Text = @"Notes for " + skillName;
         }
 
+        /// <summary>
+        /// Gets or sets the note text.
+        /// </summary>
+        /// <value>The note text.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the note text.
         /// </summary>

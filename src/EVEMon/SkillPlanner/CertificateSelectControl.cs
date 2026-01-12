@@ -75,6 +75,19 @@ namespace EVEMon.SkillPlanner
         /// <value>
         /// The character.
         /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Internal Properties
+
+        /// <summary>
+        /// Gets or sets the character.
+        /// </summary>
+        /// <value>
+        /// The character.
+        /// </value>
         internal Character Character
         {
             get { return m_character; }
@@ -87,6 +100,10 @@ namespace EVEMon.SkillPlanner
             }
         }
 
+        /// <summary>
+        /// Gets or sets the current plan.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the current plan.
         /// </summary>
@@ -116,6 +133,10 @@ namespace EVEMon.SkillPlanner
             }
         }
 
+        /// <summary>
+        /// Gets or sets the selected certificate class.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the selected certificate class.
         /// </summary>

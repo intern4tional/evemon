@@ -14,6 +14,7 @@ using EVEMon.Common.Extensions;
 using EVEMon.Common.Factories;
 using EVEMon.Common.Models;
 using EVEMon.Common.Properties;
+using System.ComponentModel;
 
 namespace EVEMon.CharacterMonitoring
 {
@@ -63,8 +64,22 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets the character associated with this monitor.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets the character associated with this monitor.
+        /// </summary>
         internal CCPCharacter Character { get; set; }
 
+        /// <summary>
+        /// Gets or sets the standing status to show contacts for.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the standing status to show contacts for.
         /// </summary>
@@ -73,8 +88,16 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets or sets a value indicating whether to show all contacts.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets a value indicating whether to show all contacts.
+        /// </summary>
         internal bool ShowAllContacts { get; set; }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether to show contacts in watch list.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets a value indicating whether to show contacts in watch list.
         /// </summary>

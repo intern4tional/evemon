@@ -48,8 +48,18 @@ namespace EVEMon.SkillPlanner
         /// Gets or sets the delta value.
         /// </summary>
         /// <value>The delta value.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets the delta value.
+        /// </summary>
+        /// <value>The delta value.</value>
         internal long DeltaValue { get; set; }
 
+        /// <summary>
+        /// Gets or sets the highlighed value.
+        /// </summary>
+        /// <value>The highlighed value.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the highlighed value.
         /// </summary>

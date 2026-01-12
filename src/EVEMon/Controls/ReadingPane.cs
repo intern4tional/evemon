@@ -9,6 +9,7 @@ using EVEMon.Common.Constants;
 using EVEMon.Common.Factories;
 using EVEMon.Common.Interfaces;
 using EVEMon.Common.Models;
+using System.ComponentModel;
 
 namespace EVEMon.Controls
 {
@@ -29,6 +30,18 @@ namespace EVEMon.Controls
             lblMessageHeader.Font = FontFactory.GetDefaultFont(10F, FontStyle.Bold);
             flPanelHeader.ForeColor = SystemColors.ControlText;
         }
+
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the selected object.
+        /// </summary>
+        /// <value>The selected object.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 
 
         #endregion

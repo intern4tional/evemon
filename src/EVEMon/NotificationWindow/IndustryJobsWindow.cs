@@ -5,6 +5,7 @@ using EVEMon.Common.Controls;
 using EVEMon.Common.Enumerations;
 using EVEMon.Common.Models;
 using EVEMon.Common.SettingsObjects;
+using System.ComponentModel;
 
 namespace EVEMon.NotificationWindow
 {
@@ -22,6 +23,10 @@ namespace EVEMon.NotificationWindow
             m_init = true;
         }
 
+        /// <summary>
+        /// Gets or sets the grouping mode.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the grouping mode.
         /// </summary>
@@ -43,6 +48,10 @@ namespace EVEMon.NotificationWindow
         /// <summary>
         /// Gets or sets the showIssuedFor mode.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets the showIssuedFor mode.
+        /// </summary>
         internal IssuedFor ShowIssuedFor
         {
             get { return jobsList.ShowIssuedFor; }
@@ -61,12 +70,20 @@ namespace EVEMon.NotificationWindow
         /// <summary>
         /// Gets or sets the enumeration of jobs to display.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets the enumeration of jobs to display.
+        /// </summary>
         internal IEnumerable<IndustryJob> Jobs
         {
             get { return jobsList.Jobs; }
             set { jobsList.Jobs = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the enumeration of displayed columns.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the enumeration of displayed columns.
         /// </summary>

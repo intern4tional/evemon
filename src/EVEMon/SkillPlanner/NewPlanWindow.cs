@@ -1,6 +1,7 @@
 using System;
 using System.Windows.Forms;
 using EVEMon.Common.Controls;
+using System.ComponentModel;
 
 namespace EVEMon.SkillPlanner
 {
@@ -20,8 +21,18 @@ namespace EVEMon.SkillPlanner
         /// Gets or sets the name of the plan.
         /// </summary>
         /// <value>The name of the plan.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets the name of the plan.
+        /// </summary>
+        /// <value>The name of the plan.</value>
         public string PlanName { get; set; }
 
+        /// <summary>
+        /// Gets or sets the plan description.
+        /// </summary>
+        /// <value>The plan description.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the plan description.
         /// </summary>

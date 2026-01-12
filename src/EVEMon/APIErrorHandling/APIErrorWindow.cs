@@ -11,6 +11,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace EVEMon.ApiErrorHandling
 {
@@ -33,6 +34,10 @@ namespace EVEMon.ApiErrorHandling
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Gets or sets the notification for this error.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the notification for this error.
         /// </summary>

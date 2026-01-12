@@ -11,6 +11,7 @@ using EVEMon.Common.Helpers;
 using EVEMon.Common.Models;
 using EVEMon.Common.Service;
 using EVEMon.SkillPlanner;
+using System.ComponentModel;
 
 namespace EVEMon.Controls
 {
@@ -28,6 +29,19 @@ namespace EVEMon.Controls
         {
             InitializeComponent();
         }
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the kill log.
+        /// </summary>
+        /// <value>
+        /// The kill log.
+        /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 
         #endregion
 

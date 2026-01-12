@@ -13,6 +13,7 @@ using EVEMon.Common.Models;
 using EVEMon.Common.Serialization.Eve;
 using EVEMon.Common.Service;
 using EVEMon.SkillPlanner;
+using System.ComponentModel;
 
 namespace EVEMon.Controls
 {
@@ -47,6 +48,20 @@ namespace EVEMon.Controls
         /// <value>
         /// The attacker.
         /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the attacker.
+        /// </summary>
+        /// <value>
+        /// The attacker.
+        /// </value>
         internal SerializableKillLogAttackersListItem Attacker
         {
             get { return m_attacker; }
@@ -57,6 +72,13 @@ namespace EVEMon.Controls
             }
         }
 
+        /// <summary>
+        /// Gets or sets the kill log.
+        /// </summary>
+        /// <value>
+        /// The kill log.
+        /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the kill log.
         /// </summary>

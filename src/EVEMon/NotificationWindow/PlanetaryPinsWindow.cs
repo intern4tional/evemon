@@ -4,6 +4,7 @@ using System.Linq;
 using EVEMon.Common.Controls;
 using EVEMon.Common.Models;
 using EVEMon.Common.SettingsObjects;
+using System.ComponentModel;
 
 namespace EVEMon.NotificationWindow
 {
@@ -24,6 +25,7 @@ namespace EVEMon.NotificationWindow
         /// <summary>
         /// Gets or sets the grouping mode.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal Enum Grouping
         {
             get { return planetaryList.Grouping; }
@@ -42,12 +44,20 @@ namespace EVEMon.NotificationWindow
         /// <summary>
         /// Gets or sets the enumeration of jobs to display.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets the enumeration of jobs to display.
+        /// </summary>
         internal IEnumerable<PlanetaryPin> PlanetaryPins
         {
             get { return planetaryList.PlanetaryPins; }
             set { planetaryList.PlanetaryPins = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the enumeration of displayed columns.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the enumeration of displayed columns.
         /// </summary>

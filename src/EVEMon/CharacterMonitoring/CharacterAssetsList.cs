@@ -84,12 +84,23 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets the character associated with this monitor.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets the character associated with this monitor.
+        /// </summary>
         internal CCPCharacter Character { get; set; }
 
         /// <summary>
         /// Gets or sets the text filter.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string TextFilter
         {
             get { return m_textFilter; }
@@ -122,6 +133,7 @@ namespace EVEMon.CharacterMonitoring
         /// </summary>
         /// <value></value>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Enum Grouping
         {
             get { return m_grouping; }

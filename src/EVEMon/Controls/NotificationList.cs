@@ -19,6 +19,7 @@ using EVEMon.Common.Properties;
 using EVEMon.Common.SettingsObjects;
 using EVEMon.NotificationWindow;
 using EVEMon.Common.Constants;
+using System.ComponentModel;
 
 namespace EVEMon.Controls
 {
@@ -110,6 +111,16 @@ namespace EVEMon.Controls
             if (Visible && m_pendingUpdate)
                 UpdateContent();
         }
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the displayed notifications.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 
         #endregion
 

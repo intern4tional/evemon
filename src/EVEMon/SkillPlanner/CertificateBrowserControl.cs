@@ -14,6 +14,7 @@ using EVEMon.Common.Factories;
 using EVEMon.Common.Helpers;
 using EVEMon.Common.Interfaces;
 using EVEMon.Common.Models;
+using System.ComponentModel;
 
 namespace EVEMon.SkillPlanner
 {
@@ -91,6 +92,19 @@ namespace EVEMon.SkillPlanner
         /// <value>
         /// The character.
         /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Internal Properties
+
+        /// <summary>
+        /// Gets or sets the character.
+        /// </summary>
+        /// <value>
+        /// The character.
+        /// </value>
         internal Character Character
         {
             get { return certSelectControl.Character; }
@@ -103,6 +117,10 @@ namespace EVEMon.SkillPlanner
             }
         }
 
+        /// <summary>
+        /// Gets or sets the current plan
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the current plan
         /// </summary>
@@ -129,6 +147,7 @@ namespace EVEMon.SkillPlanner
         /// <value>
         /// The selected certificate class.
         /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal CertificateClass SelectedCertificateClass
         {
             get { return m_selectedCertificate; }

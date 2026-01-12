@@ -54,6 +54,7 @@ namespace EVEMon.Common.Controls
         /// </remarks>
         [Category("Appearance"),
          Description("The icon to display in the system tray")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Icon Icon
         {
             get { return notifyIcon.Icon; }

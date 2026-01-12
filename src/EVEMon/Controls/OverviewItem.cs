@@ -263,6 +263,7 @@ namespace EVEMon.Controls
         /// Gets or sets true whether a button should appear on hover.
         /// </summary>
         [Description("When true, a background button will appear on hover and the control will fire Click event")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool Clickable { get; set; }
 
         #endregion

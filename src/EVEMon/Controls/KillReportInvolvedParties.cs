@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using EVEMon.Common.Constants;
 using EVEMon.Common.Models;
 using EVEMon.Common.Serialization.Eve;
+using System.ComponentModel;
 
 namespace EVEMon.Controls
 {
@@ -22,6 +23,19 @@ namespace EVEMon.Controls
         {
             InitializeComponent();
         }
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the kill log.
+        /// </summary>
+        /// <value>
+        /// The kill log.
+        /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 
         #endregion
 

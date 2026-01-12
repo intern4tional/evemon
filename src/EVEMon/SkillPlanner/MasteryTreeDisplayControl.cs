@@ -98,6 +98,7 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// Gets or sets the current plan.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal Plan Plan
         {
             get { return m_plan; }
@@ -115,6 +116,7 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// Gets or sets the mastery ship.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal MasteryShip MasteryShip
         {
             get { return m_masteryShip; }

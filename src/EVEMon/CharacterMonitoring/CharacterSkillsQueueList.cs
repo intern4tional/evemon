@@ -71,6 +71,16 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets the character associated with this monitor.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets the character associated with this monitor.
+        /// </summary>
         internal CCPCharacter Character { get; set; }
 
         /// <summary>

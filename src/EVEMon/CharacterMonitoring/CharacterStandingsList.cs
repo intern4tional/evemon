@@ -13,6 +13,7 @@ using EVEMon.Common.Extensions;
 using EVEMon.Common.Factories;
 using EVEMon.Common.Models;
 using EVEMon.Common.Properties;
+using System.ComponentModel;
 
 namespace EVEMon.CharacterMonitoring
 {
@@ -53,6 +54,16 @@ namespace EVEMon.CharacterMonitoring
             m_standingsBoldFont = FontFactory.GetFont("Tahoma", 8.25F, FontStyle.Bold);
             noStandingsLabel.Font = FontFactory.GetFont("Tahoma", 11.25F, FontStyle.Bold);
         }
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets the character associated with this monitor.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 
         #endregion
 

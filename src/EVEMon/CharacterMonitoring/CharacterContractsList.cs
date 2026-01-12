@@ -83,12 +83,14 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets the character associated with this monitor.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal CCPCharacter Character { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether this <see cref="lvContracts"/> is visible.
         /// </summary>
         /// <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal bool Visibility
         {
             get { return lvContracts.Visible; }
@@ -99,6 +101,7 @@ namespace EVEMon.CharacterMonitoring
         /// Gets or sets the text filter.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string TextFilter
         {
             get { return m_textFilter; }
@@ -113,6 +116,7 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets or sets the enumeration of research points to display.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal IEnumerable<Contract> Contracts
         {
             get { return m_list; }
@@ -130,6 +134,7 @@ namespace EVEMon.CharacterMonitoring
         /// Gets or sets the grouping mode.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Enum Grouping
         {
             get { return m_grouping; }
@@ -144,6 +149,7 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets or sets which "Issued for" contracts to display.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal IssuedFor ShowIssuedFor
         {
             get { return m_showIssuedFor; }

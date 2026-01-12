@@ -74,12 +74,23 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets the character associated with this monitor.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets the character associated with this monitor.
+        /// </summary>
         internal CCPCharacter Character { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether this <see cref="lvPlanetary"/> is visible.
         /// </summary>
         /// <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal bool Visibility
         {
             get { return lvPlanetary.Visible; }
@@ -90,6 +101,7 @@ namespace EVEMon.CharacterMonitoring
         /// Gets or sets the text filter.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string TextFilter
         {
             get { return m_textFilter; }
@@ -104,6 +116,7 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets or sets the enumeration of planetary colonies to display.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal IEnumerable<PlanetaryPin> PlanetaryPins
         {
             get { return m_list; }
@@ -121,6 +134,7 @@ namespace EVEMon.CharacterMonitoring
         /// Gets or sets the grouping mode.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Enum Grouping
         {
             get { return m_grouping; }

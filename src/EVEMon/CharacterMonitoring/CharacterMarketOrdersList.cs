@@ -116,8 +116,23 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets the character associated with this monitor.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets the character associated with this monitor.
+        /// </summary>
         internal CCPCharacter Character { get; set; }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="lvOrders"/> is visible.
+        /// </summary>
+        /// <value><c>true</c> if visible; otherwise, <c>false</c>.</value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets a value indicating whether this <see cref="lvOrders"/> is visible.
         /// </summary>
@@ -132,6 +147,7 @@ namespace EVEMon.CharacterMonitoring
         /// Gets or sets the text filter.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string TextFilter
         {
             get { return m_textFilter; }
@@ -147,6 +163,7 @@ namespace EVEMon.CharacterMonitoring
         /// Gets or sets the grouping mode.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Enum Grouping
         {
             get { return m_grouping; }
@@ -158,6 +175,10 @@ namespace EVEMon.CharacterMonitoring
             }
         }
 
+        /// <summary>
+        /// Gets or sets which "Issued for" orders to display.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets which "Issued for" orders to display.
         /// </summary>
@@ -179,6 +200,10 @@ namespace EVEMon.CharacterMonitoring
             => m_list.Any(x => (x.State == OrderState.Active || x.State == OrderState.Modified)
                                && x.IssuedFor == IssuedFor.Corporation);
 
+        /// <summary>
+        /// Gets or sets the enumeration of orders to display.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the enumeration of orders to display.
         /// </summary>

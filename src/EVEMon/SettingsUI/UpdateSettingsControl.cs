@@ -39,6 +39,7 @@ namespace EVEMon.SettingsUI
         /// Gets or sets the settings to edit (should be a copy of the actual settings).
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public UpdateSettings Settings
         {
             get { return m_settings; }

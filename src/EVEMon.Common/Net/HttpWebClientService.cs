@@ -13,8 +13,10 @@ namespace EVEMon.Common.Net
         /// </summary>
         static HttpWebClientService()
         {
-            ServicePointManager.Expect100Continue = false;
-            ServicePointManager.DefaultConnectionLimit = 10;
+            // ServicePointManager is obsolete and no longer affects HttpClient or SslStream.
+            // The following lines are removed to resolve SYSLIB0014.
+            // ServicePointManager.Expect100Continue = false;
+            // ServicePointManager.DefaultConnectionLimit = 10;
 #if false
             // To debug trust failure issues
             if (EveMonClient.IsDebugBuild)
@@ -37,10 +39,15 @@ namespace EVEMon.Common.Net
         /// Gets the web client.
         /// </summary>
         /// <returns></returns>
-        public static WebClient GetWebClient() => new WebClient
+        [Obsolete("WebClient is obsolete. Use GetHttpClient() instead.")]
+        public static WebClient GetWebClient()
         {
-            Proxy = HttpClientServiceRequest.GetWebProxy()
-        };
+            // For legacy compatibility only. Prefer GetHttpClient().
+            return new WebClient
+            {
+                Proxy = HttpClientServiceRequest.GetWebProxy()
+            };
+        }
 
         /// <summary>
         /// Gets the HTTP client.

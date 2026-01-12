@@ -75,12 +75,23 @@ namespace EVEMon.CharacterMonitoring
         /// <summary>
         /// Gets the character associated with this monitor.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets the character associated with this monitor.
+        /// </summary>
         internal CCPCharacter Character { get; set; }
 
         /// <summary>
         /// Gets or sets the text filter.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string TextFilter
         {
             get { return m_textFilter; }
@@ -96,6 +107,7 @@ namespace EVEMon.CharacterMonitoring
         /// Gets or sets the grouping mode.
         /// </summary>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public Enum Grouping
         {
             get { return m_grouping; }
@@ -107,6 +119,10 @@ namespace EVEMon.CharacterMonitoring
             }
         }
 
+        /// <summary>
+        /// Gets or sets the pane position.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the pane position.
         /// </summary>

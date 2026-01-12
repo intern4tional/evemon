@@ -115,6 +115,7 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// Gets the plan to which the extracted skills of the loadout should be added.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal Plan Plan
         {
             get { return m_plan; }

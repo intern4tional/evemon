@@ -69,6 +69,7 @@ namespace EVEMon.Controls
         /// <value>
         /// The kill log.
         /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal KillLog KillLog
         {
             get { return m_killLog; }

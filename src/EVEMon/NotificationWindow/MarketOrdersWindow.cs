@@ -5,6 +5,7 @@ using EVEMon.Common.Controls;
 using EVEMon.Common.Enumerations;
 using EVEMon.Common.Models;
 using EVEMon.Common.SettingsObjects;
+using System.ComponentModel;
 
 namespace EVEMon.NotificationWindow
 {
@@ -22,6 +23,10 @@ namespace EVEMon.NotificationWindow
             m_init = true;
         }
 
+        /// <summary>
+        /// Gets or sets the grouping mode.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the grouping mode.
         /// </summary>
@@ -43,6 +48,10 @@ namespace EVEMon.NotificationWindow
         /// <summary>
         /// Gets or sets the ShowIssuedFor mode.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets the ShowIssuedFor mode.
+        /// </summary>
         internal IssuedFor ShowIssuedFor
         {
             get { return ordersList.ShowIssuedFor; }
@@ -61,12 +70,20 @@ namespace EVEMon.NotificationWindow
         /// <summary>
         /// Gets or sets the enumeration of orders to display.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets the enumeration of orders to display.
+        /// </summary>
         internal IEnumerable<MarketOrder> Orders
         {
             get { return ordersList.Orders; }
             set { ordersList.Orders = value; }
         }
 
+        /// <summary>
+        /// Gets or sets the enumeration of displayed columns.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the enumeration of displayed columns.
         /// </summary>

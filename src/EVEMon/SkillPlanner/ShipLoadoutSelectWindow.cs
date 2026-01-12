@@ -15,6 +15,7 @@ using EVEMon.Common.Helpers;
 using EVEMon.Common.Interfaces;
 using EVEMon.Common.Models;
 using SortOrder = System.Windows.Forms.SortOrder;
+using System.ComponentModel;
 
 namespace EVEMon.SkillPlanner
 {
@@ -86,6 +87,16 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// Gets or sets the plan.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the plan.
+        /// </summary>
         internal Plan Plan
         {
             get { return m_plan; }
@@ -102,6 +113,10 @@ namespace EVEMon.SkillPlanner
             }
         }
 
+        /// <summary>
+        /// Gets or sets the ship.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the ship.
         /// </summary>

@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using EVEMon.Common.Controls;
 using EVEMon.Common.Models;
 using EVEMon.Common.Notifications;
+using System.ComponentModel;
 
 namespace EVEMon.NotificationWindow
 {
@@ -20,6 +21,10 @@ namespace EVEMon.NotificationWindow
             RememberPositionKey = "SkillCompletionWindow";
         }
 
+        /// <summary>
+        /// Gets or sets the list of completed skills.
+        /// </summary> 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the list of completed skills.
         /// </summary> 

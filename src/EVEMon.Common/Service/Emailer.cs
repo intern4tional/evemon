@@ -270,8 +270,6 @@ namespace EVEMon.Common.Service
                 EnableSsl = settings.EmailServerRequiresSsl
             };
 
-            ServicePointManager.ServerCertificateValidationCallback = (s, certificate, chain, sslPolicyErrors) => true;
-
             client.SendCompleted += SendCompleted;
 
             if (!settings.EmailAuthenticationRequired)

@@ -30,6 +30,7 @@ namespace EVEMon.SettingsUI
         /// </summary>
         /// <value>The settings.</value>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public NotificationSettings Settings
         {
             get { return m_settings; }

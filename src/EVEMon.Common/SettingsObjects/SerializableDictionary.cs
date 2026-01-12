@@ -14,18 +14,8 @@ namespace EVEMon.Common.SettingsObjects
         /// <summary>
         /// Initializes a new instance of the <see cref="SerializableDictionary&lt;TKey, TValue&gt;"/> class.
         /// </summary>
-        /// <param name="info">The info.</param>
-        /// <param name="context">The context.</param>
         /// <remarks>Implemented to satisfy rule CA2229</remarks>
-        private SerializableDictionary(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
-
-        /// <summary>
-        /// Default constructor.
-        /// </summary>
-        public SerializableDictionary()
+        private SerializableDictionary()
         {
         }
 

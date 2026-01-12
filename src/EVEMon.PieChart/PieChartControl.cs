@@ -91,6 +91,7 @@ namespace EVEMon.PieChart
         /// The colors.
         /// </value>
         [Browsable(false)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public IEnumerable<Color> Colors
         {
             get { return m_colors; }

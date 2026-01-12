@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace EVEMon.Controls
 {
@@ -19,6 +20,13 @@ namespace EVEMon.Controls
             DoubleBuffered = true;
         }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether the control can respond to user interaction.
+        /// </summary>
+        /// <value></value>
+        /// <returns>true if the control can respond to user interaction; otherwise, false. The default is true.
+        /// </returns>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets a value indicating whether the control can respond to user interaction.
         /// </summary>

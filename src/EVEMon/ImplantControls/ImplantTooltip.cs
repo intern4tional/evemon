@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using EVEMon.Common.Data;
 using EVEMon.Common.Factories;
+using System.ComponentModel;
 
 namespace EVEMon.ImplantControls
 {
@@ -31,6 +32,10 @@ namespace EVEMon.ImplantControls
             TopMost = true;
         }
 
+        /// <summary>
+        /// Gets or sets the represented implant.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the represented implant.
         /// </summary>

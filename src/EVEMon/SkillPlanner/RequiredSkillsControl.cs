@@ -75,6 +75,7 @@ namespace EVEMon.SkillPlanner
         /// <value>
         /// The activity.
         /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal BlueprintActivity Activity
         {
             get { return m_activity; }
@@ -88,6 +89,7 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// An EveObject for which we want to show required skills
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal Item Object
         {
             get { return m_object; }
@@ -101,6 +103,7 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// The target Plan object to add any required skills
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal Plan Plan
         {
             get { return m_plan; }

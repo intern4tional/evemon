@@ -46,6 +46,7 @@ namespace EVEMon.SkillPlanner
         /// <value>
         /// The character.
         /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal Character Character
         {
             get { return m_character; }
@@ -61,6 +62,7 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// Gets or sets the plan.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal Plan Plan
         {
             get { return m_plan; }
@@ -129,6 +131,10 @@ namespace EVEMon.SkillPlanner
             }
         }
 
+        /// <summary>
+        /// Gets or sets the search text.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the search text.
         /// </summary>
@@ -443,6 +449,7 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// The primary selected object.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal Item SelectedObject
         {
             get

@@ -15,6 +15,7 @@ using EVEMon.Common.Helpers;
 using EVEMon.Common.Interfaces;
 using EVEMon.Common.Models;
 using EVEMon.NotificationWindow;
+using System.ComponentModel;
 
 namespace EVEMon.SkillPlanner
 {
@@ -96,6 +97,19 @@ namespace EVEMon.SkillPlanner
         /// <value>
         /// The character.
         /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Internal Properties
+
+        /// <summary>
+        /// Gets or sets the character.
+        /// </summary>
+        /// <value>
+        /// The character.
+        /// </value>
         internal Character Character
         {
             get { return skillSelectControl.Character; }
@@ -108,6 +122,10 @@ namespace EVEMon.SkillPlanner
             }
         }
 
+        /// <summary>
+        /// Gets or sets the plan this control is bound to.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the plan this control is bound to.
         /// </summary>
@@ -126,6 +144,10 @@ namespace EVEMon.SkillPlanner
             }
         }
 
+        /// <summary>
+        /// Gets or sets the selected skills.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the selected skills.
         /// </summary>

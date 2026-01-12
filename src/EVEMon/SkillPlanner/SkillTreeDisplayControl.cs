@@ -13,6 +13,7 @@ using EVEMon.Common.Enumerations;
 using EVEMon.Common.Extensions;
 using EVEMon.Common.Factories;
 using EVEMon.Common.Models;
+using System.ComponentModel;
 
 namespace EVEMon.SkillPlanner
 {
@@ -137,6 +138,16 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// Gets or sets the plan this control is bound to.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Internal Properties
+
+        /// <summary>
+        /// Gets or sets the plan this control is bound to.
+        /// </summary>
         internal Plan Plan
         {
             get { return m_plan; }
@@ -147,6 +158,10 @@ namespace EVEMon.SkillPlanner
             }
         }
 
+        /// <summary>
+        /// Gets or sets the root skill.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the root skill.
         /// </summary>

@@ -13,6 +13,7 @@ using EVEMon.Common.Extensions;
 using EVEMon.Common.Helpers;
 using EVEMon.Common.Interfaces;
 using EVEMon.Common.Models;
+using System.ComponentModel;
 
 namespace EVEMon.SkillPlanner
 {
@@ -99,6 +100,19 @@ namespace EVEMon.SkillPlanner
 
             EveMonClient.PlanNameChanged -= EveMonClient_PlanNameChanged;
         }
+
+        #endregion
+
+
+        #region Internal Properties
+
+        /// <summary>
+        /// Gets or sets the plan.
+        /// </summary>
+        /// <value>
+        /// The plan.
+        /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 
         #endregion
 

@@ -125,6 +125,19 @@ namespace EVEMon.SkillPlanner
         /// <value>
         /// The plan.
         /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Internal Properties
+
+        /// <summary>
+        /// Gets or sets the plan.
+        /// </summary>
+        /// <value>
+        /// The plan.
+        /// </value>
         internal Plan Plan
         {
             get { return m_plan; }

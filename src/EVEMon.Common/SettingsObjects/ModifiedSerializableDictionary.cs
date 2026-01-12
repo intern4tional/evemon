@@ -16,17 +16,6 @@ namespace EVEMon.Common.SettingsObjects
     public sealed class ModifiedSerializableDictionary<TKey, TValue> : Dictionary<TKey, TValue>, IXmlSerializable
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="EVEMon.Common.SettingsObjects.SerializableDictionary{TKey,TValue}"/> class.
-        /// </summary>
-        /// <param name="info">The info.</param>
-        /// <param name="context">The context.</param>
-        /// <remarks>Implemented to satisfy rule CA2229</remarks>
-        private ModifiedSerializableDictionary(SerializationInfo info, StreamingContext context)
-            : base(info, context)
-        {
-        }
-
-        /// <summary>
         /// Default constructor.
         /// </summary>
         public ModifiedSerializableDictionary()
@@ -152,11 +141,15 @@ namespace EVEMon.Common.SettingsObjects
             Type valueType = typeof(TValue);
 
             // Check that each type we use is serializable
-            if (!keyType.IsSerializable)
+            if (!Attribute.IsDefined(keyType, typeof(SerializableAttribute)))
+            {
                 throw new ArgumentException($"{keyType} is not serializable", keyType.ToString());
+            }
 
-            if (!valueType.IsSerializable)
+            if (!Attribute.IsDefined(valueType, typeof(SerializableAttribute)))
+            {
                 throw new ArgumentException($"{valueType} is not serializable", valueType.ToString());
+            }
 
             // Serialize each dictionary element as Xml
             foreach (TKey key in Keys)

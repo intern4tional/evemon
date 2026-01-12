@@ -161,6 +161,16 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// Gets or sets the plan represented by this editor.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the plan represented by this editor.
+        /// </summary>
         internal Plan Plan
         {
             get { return m_plan; }

@@ -1,6 +1,7 @@
 using System;
 using System.Windows.Forms;
 using EVEMon.Common.Controls;
+using System.ComponentModel;
 
 namespace EVEMon.SkillPlanner
 {
@@ -11,6 +12,7 @@ namespace EVEMon.SkillPlanner
             InitializeComponent();
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int Priority
         {
             get { return (int)nudPriority.Value; }

@@ -13,6 +13,7 @@ using EVEMon.Common.Factories;
 using EVEMon.Common.Models;
 using EVEMon.Common.Models.Collections;
 using EVEMon.Common.Serialization.Datafiles;
+using System.ComponentModel;
 
 namespace EVEMon.SkillPlanner
 {
@@ -102,6 +103,19 @@ namespace EVEMon.SkillPlanner
         /// <value>
         /// The character.
         /// </value>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+
+        #endregion
+
+
+        #region Public Properties
+
+        /// <summary>
+        /// Gets or sets the character.
+        /// </summary>
+        /// <value>
+        /// The character.
+        /// </value>
         internal Character Character
         {
             get { return SelectControl.Character; }
@@ -117,6 +131,10 @@ namespace EVEMon.SkillPlanner
         /// <summary>
         /// Gets or sets the current plan for this planner window.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        /// <summary>
+        /// Gets or sets the current plan for this planner window.
+        /// </summary>
         internal Plan Plan
         {
             get { return m_plan; }
@@ -128,6 +146,10 @@ namespace EVEMon.SkillPlanner
             }
         }
 
+        /// <summary>
+        /// Gets or sets the currently selected object.
+        /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         /// <summary>
         /// Gets or sets the currently selected object.
         /// </summary>
